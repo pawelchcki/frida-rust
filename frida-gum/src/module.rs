@@ -114,7 +114,7 @@ impl Module {
         unsafe {
             CStr::from_ptr(gum_sys::gum_module_get_name(self.inner))
                 .to_string_lossy()
-                .to_string()
+                .into_owned()
         }
     }
 
@@ -123,7 +123,7 @@ impl Module {
         unsafe {
             CStr::from_ptr(gum_sys::gum_module_get_path(self.inner))
                 .to_string_lossy()
-                .to_string()
+                .into_owned()
         }
     }
 
