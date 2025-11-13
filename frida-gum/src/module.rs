@@ -108,7 +108,6 @@ impl Module {
         }
     }
 
-    #[cfg(feature = "std")]
     /// Get the name of this module
     pub fn name(&self) -> String {
         unsafe {
@@ -118,7 +117,6 @@ impl Module {
         }
     }
 
-    #[cfg(feature = "std")]
     /// Get the path of this module
     pub fn path(&self) -> String {
         unsafe {
