@@ -21,6 +21,7 @@ use {
     crate::{Gum, NativePointer, PageProtection, RangeDetails},
     core::{ffi::c_void, fmt},
     cstr_core::CString,
+    cstr_core::CStr,
     frida_gum_sys as gum_sys,
     frida_gum_sys::{
         gboolean, gpointer, GumExportDetails, GumModule, GumSectionDetails, GumSymbolDetails,
